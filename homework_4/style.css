@@ -1,6 +1,44 @@
+/*********** GENERAL ************/
+
 body {
     margin: 0;
     font-family: 'Avenir', serif;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 20px;
+    display: table;
+}
+
+button {
+    font-family: 'Avenir';
+    margin-left: 10%;
+    margin-top: 60px;
+    position: static;
+    top: 50%; 
+    left: 30%;
+    border-radius: 2px;
+    background-color: #222222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+    font-size: 28px;
+}
+
+.icon {
+    margin-right: 5px;
+    width: 20px;
 }
 
 /*********** NAVIGATION BAR ************/
@@ -12,11 +50,6 @@ body {
     padding: 30px;
     font-size: 20px;
     text-align: center;
-}
-
-a {
-    color: #666666;
-    text-decoration: none;
 }
 
 .brand {
@@ -47,11 +80,6 @@ a {
     float: right;
 }
 
-.icon {
-    margin-right: 5px;
-    width: 20px;
-}
-
 .search-bar {
     padding-left: 20px;
     width: 150px;
@@ -70,10 +98,10 @@ header {
 }
 
 h1 {
-    margin: 10;
+    margin: 10px;
 }
 
-/*********** CONTENTS ************/
+/*********** WELCOME ************/
 
 .welcome {
     background: url('img/background.png');
@@ -93,26 +121,13 @@ h1 {
     text-decoration: underline;
 }
 
+/*********** BROWSING ************/
+
 #product-browse {
     margin-left: 10%;
     display: inline-block;
     text-align: center;
     color: #666666;
-}
-
-#product-pic {
-    margin-left: 10%;
-    float: left;
-}
-
-#options {
-    display: block;
-    margin-left: 40%;
-    width: 45%;
-}
-
-.background {
-    width: 100%;
 }
 
 .item {
@@ -134,6 +149,23 @@ h1 {
     width: 280px;
     height: 280px;
     border-radius: 50%;
+}
+
+/*********** PRODUCT DETAIL ************/
+
+#product-pic {
+    margin-left: 10%;
+    float: left;
+}
+
+#options {
+    display: block;
+    margin-left: 40%;
+    width: 45%;
+}
+
+.background {
+    width: 100%;
 }
 
 .back {
@@ -183,28 +215,3 @@ h1 {
     font-size: 24px;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    margin-top: 20px;
-    display: table;
-}
-
-button {
-    font-family: 'Avenir';
-    margin-left: 10%;
-    margin-top: 60px;
-    position: static;
-    top: 50%; 
-    left: 30%;
-    border-radius: 2px;
-    background-color: #222222;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: white;
-    font-size: 28px;
-}
