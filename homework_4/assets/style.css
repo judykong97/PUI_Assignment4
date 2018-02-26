@@ -215,3 +215,82 @@ h1 {
     font-size: 24px;
 }
 
+
+/*********** PRODUCT DETAIL ************/
+
+#shopping-cart {
+    margin-left: 10%;
+    float: left;
+}
+
+#summary {
+    margin-left: 60%;
+    margin-right: 5%;
+    /*float: left;*/
+}
+
+#checkout {
+    margin-top: 80px;
+    margin-left: 25%;
+}
+
+.edit {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #AAAAAA;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.small-pic {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    float: left;
+}
+
+.cart-text {
+    margin-top: 0px;
+    padding-top: 40px;
+    margin-left: 25px;
+    color: #AAAAAA;
+    font-size: 20px;
+    float: left;
+}
+
+.cart-num {
+    position: absolute;
+    padding-top: 40px;
+    margin-left: 450px;
+    color: #AAAAAA;
+    font-size: 20px;
+    float: left;
+}
+
+.cart-arrow {
+    position: absolute;
+    padding-top: 40px;
+    left: 650px;
+    width: 10px;
+    float: left;
+}
+
+.cart-cross {
+    position: absolute;
+    padding-top: 45px;
+    left: 700px;
+    width: 18px;
+    float: left;
+}
+
+.summary-price {
+    position: absolute;
+    right: 10%;
+    color: #666666;
+    font-size: 24px;
+    float: right;
+    display: inline;
+}

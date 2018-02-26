@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Shop</title>
+    <!-- Encoding -->
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Navigation Bar -->
+    	<div class="navbar">
+    		<div class="tab-left">
+    			<img class="icon" src="assets/img/menu.png" alt="">
+    			<img class="search-bar" src="assets/img/search.png" alt="">
+    		</div>
+    		<a class="brand" href="index.html">Bun Bun Shop</a>
+    		<div class="tab-right">
+    			<img class="icon" src="assets/img/cart.png" alt="">
+    			<a href="cart.html">Shopping Cart</a>
+    		</div>
+    		<div class="tab-right">
+    			<img class="icon" src="assets/img/account.png" alt="">
+    			Account
+    		</div>
+    	</div>
+        <!-- Title -->
+        <header>
+            <a href="cart.html"><h1>Shopping Cart</h1></a>
+        </header>
+        <!-- Product Information -->
+        <div id="shopping-cart">
+            <div class="edit">EDIT</div>
+            <ul id="cart-items">
+                <li>
+                    <img class="small-pic" src="assets/img/original.jpg" alt="">
+                    <div class="cart-text">Original Cinnamon Rolls</div>
+                    <div class="cart-num">1</div>
+                    <img class="cart-arrow" src="assets/img/arrow.png" alt="">
+                    <img class="cart-cross" src="assets/img/cross.png" alt="">
+                </li>
+                <li>
+                    <img class="small-pic" src="assets/img/blackberry.jpg" alt="">
+                    <div class="cart-text">Blackberry Cinnamon Rolls</div>
+                    <div class="cart-num">1</div>
+                    <img class="cart-arrow" src="assets/img/arrow.png" alt="">
+                    <img class="cart-cross" src="assets/img/cross.png" alt="">
+                </li>
+                <li>
+                    <img class="small-pic" src="assets/img/walnut.jpg" alt="">
+                    <div class="cart-text">Walnut Cinnamon Rolls</div>
+                    <div class="cart-num">1</div>
+                    <img class="cart-arrow" src="assets/img/arrow.png" alt="">
+                    <img class="cart-cross" src="assets/img/cross.png" alt="">
+                </li>
+                <li>
+                    <img class="small-pic" src="assets/img/pumpkin-spice.jpg" alt="">
+                    <div class="cart-text">Pumpkin Spice Cinnamon Rolls</div>
+                    <div class="cart-num">1</div>
+                    <img class="cart-arrow" src="assets/img/arrow.png" alt="">
+                    <img class="cart-cross" src="assets/img/cross.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- Summary -->
+        <ul id="summary">
+            <li>
+                <div class="main">Subtotal<div class="summary-price">$20.00</div></div>
+            </li>
+            <li>
+                <div class="main">Tax<div class="summary-price">$3.27</div></div>
+            </li>
+            <li>
+                <div class="main">Shipping<div class="summary-price">$0.00</div></div>
+            </li>
+            <li>
+                <div class="main">Estimated Total<div class="summary-price">$23.27</div></div>
+            </li>
+        </ul>
+        <!-- Checkout -->
+        <button id="checkout">Checkout</button>
+    </div>
+</body>
+</html>
