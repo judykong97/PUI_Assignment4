@@ -1,0 +1,21 @@
+body {
+    font-family: 'Avenir', serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Avenir', serif;
+    color: #BBBBBB;
+}
+
+#container {
+    width: 80%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#image {
+	width: 500px;
+	float: center;
+    border-radius: 10px;
+}
