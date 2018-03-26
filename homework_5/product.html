@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Shop</title>
+    <!-- Encoding -->
+    <meta charset="UTF-8">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/product.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Navigation Bar -->
+    	<div class="navbar">
+    		<div class="tab-left">
+    			<img class="icon" src="assets/images/menu.png" alt="">
+    			<img class="search-bar" src="assets/images/search.png" alt="">
+    		</div>
+    		<a class="brand" href="index.html">Bun Bun Shop</a>
+    		<div class="tab-right">
+    			<img class="icon" src="assets/images/cart.png" alt="">
+    			<a href="cart.html" id="item-count">0 Items</a>
+    		</div>
+    		<div class="tab-right">
+    			<img class="icon" src="assets/images/account.png" alt="">
+    			Account
+    		</div>
+    	</div>
+        <!-- Title -->
+        <header>
+            <a href="browse.html"><h1>Shop Cinnamon Rolls</h1></a>
+        </header>
+        <!-- Product Information -->
+        <div id="product-pic">
+            <a class="back" href="browse.html">BACK</a>
+        	<img class="pic" id="product-image" src="assets/images/original.jpg" alt="">
+        	<div class="main">Original Cinnamon Rolls</div>
+        	<div class="price">$5.00</div>
+        </div>
+        <!-- Buying Options -->
+        <ul id="options">
+            <li>
+                <div class="main">Choose a glazing</div>
+                <div class="choice" id="glazing-none">None</div>
+                <div class="choice" id="glazing-sugarmilk">Sugar-Milk</div>
+                <div class="choice" id="glazing-vanillamilk">Vanilla-Milk</div>
+                <div class="choice" id="glazing-doublechocolate">Double-Chocolate</div>
+            </li>
+            <li>
+                <div class="main">How many cinnamon rolls do you want</div>
+                <div class="choice-quant" id="quantity-1">1 Roll</div>
+                <div class="choice-quant" id="quantity-2">2 Rolls</div>
+                <div class="choice-quant" id="quantity-6">6 Rolls</div>
+                <div class="choice-quant" id="quantity-12">12 Rolls</div>
+            </li>
+        </ul>
+        <!-- Add to Cart -->
+        <button id="add-to-cart">Add to Cart</button>
+    </div>
+</body>
+</html>

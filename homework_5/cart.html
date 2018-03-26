@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Shop</title>
+    <!-- Encoding -->
+    <meta charset="UTF-8">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/cart.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Navigation Bar -->
+    	<div class="navbar">
+    		<div class="tab-left">
+    			<img class="icon" src="assets/images/menu.png" alt="">
+    			<img class="search-bar" src="assets/images/search.png" alt="">
+    		</div>
+    		<a class="brand" href="index.html">Bun Bun Shop</a>
+    		<div class="tab-right">
+    			<img class="icon" src="assets/images/cart.png" alt="">
+    			<a href="cart.html" id="item-count">0 Items</a>
+    		</div>
+    		<div class="tab-right">
+    			<img class="icon" src="assets/images/account.png" alt="">
+    			Account
+    		</div>
+    	</div>
+        <!-- Title -->
+        <header>
+            <h1>Shopping Cart</h1>
+            <a href="browse.html" class="edit">BACK TO SHOPPING</a>
+        </header>
+        <h1 id="no-item">There's no item in your cart!</h1>
+        <!-- Product Information -->
+        <div id="shopping-cart">
+            <ul id="cart-items">
+            </ul>
+        </div>
+        <!-- <div class="vl"></div> -->
+        <!-- Summary -->
+        <div id = "summary">
+            <ol>
+                <li>
+                    <div class="main-summary">Subtotal<div class="summary-price" id="subtotal">$0.00</div></div>
+                </li>
+                <li>
+                    <div class="main-summary">Tax<div class="summary-price" id="tax">$0.00</div></div>
+                </li>
+                <li>
+                    <div class="main-summary">Shipping<div class="summary-price">$0.00</div></div>
+                </li>
+                <li>
+                    <div class="main-summary">Estimated Total<div class="summary-price" id="estimated-total">$0.00</div></div>
+                </li>
+            <!-- Checkout -->
+            </ol>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
