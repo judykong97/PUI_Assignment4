@@ -17,15 +17,21 @@
     <div id="container">
         <!-- Navigation Bar -->
     	<div class="navbar">
+            <!-- Search Icon  -->
     		<div class="tab-left">
     			<img class="icon" src="assets/images/menu.png" alt="">
     			<img class="search-bar" src="assets/images/search.png" alt="">
     		</div>
+            <!-- Brand Name -->
+            <!-- users can click on the brand name to go back to main screen on any page -->
     		<a class="brand" href="index.html">Bun Bun Shop</a>
+            <!-- Shopping Cart -->
+            <!-- users can click on the shopping cart to view shopping cart on any page -->
     		<div class="tab-right">
     			<img class="icon" src="assets/images/cart.png" alt="">
     			<a href="cart.html" id="item-count">0 Items</a>
     		</div>
+            <!-- Account -->
     		<div class="tab-right">
     			<img class="icon" src="assets/images/account.png" alt="">
     			Account
@@ -36,28 +42,24 @@
             <h1>Shopping Cart</h1>
             <a href="browse.html" class="edit">BACK TO SHOPPING</a>
         </header>
+        <!-- Default "No-Item" Message -->
+        <!-- Will be deleted by Javascript when there are items in the cart -->
         <h1 id="no-item">There's no item in your cart!</h1>
         <!-- Product Information -->
         <div id="shopping-cart">
+            <!-- Place-holder for list of items in shopping cart -->
+            <!-- Items will be added to the list by Javascript when the page is loaded -->
             <ul id="cart-items">
             </ul>
         </div>
-        <!-- <div class="vl"></div> -->
         <!-- Summary -->
         <div id = "summary">
+            <!-- Item summary - subtotal, tax, shipping, and estimated total -->
             <ol>
-                <li>
-                    <div class="main-summary">Subtotal<div class="summary-price" id="subtotal">$0.00</div></div>
-                </li>
-                <li>
-                    <div class="main-summary">Tax<div class="summary-price" id="tax">$0.00</div></div>
-                </li>
-                <li>
-                    <div class="main-summary">Shipping<div class="summary-price">$0.00</div></div>
-                </li>
-                <li>
-                    <div class="main-summary">Estimated Total<div class="summary-price" id="estimated-total">$0.00</div></div>
-                </li>
+                <li><div class="main-summary">Subtotal<div class="summary-price" id="subtotal">$0.00</div></div></li>
+                <li><div class="main-summary">Tax<div class="summary-price" id="tax">$0.00</div></div></li>
+                <li><div class="main-summary">Shipping<div class="summary-price">$0.00</div></div></li>
+                <li><div class="main-summary">Estimated Total<div class="summary-price" id="estimated-total">$0.00</div></div></li>
             <!-- Checkout -->
             </ol>
             <button id="checkout">Checkout</button>

@@ -1,4 +1,12 @@
+/* product.js
+ *
+ * Handles the add-to-cart process of items on product detail page
+ * Also updates item count of shopping cart on loading of every other page
+ */
 
+/* Product object
+ * Stores all attibutes of a product in the object: 
+ * name of product, glazing, quantaty, and image */
 function Product(glazing, quantity) {
 	this.cinnamon = "Original Cinnamon Rolls";
 	this.glazing = glazing;
@@ -6,6 +14,9 @@ function Product(glazing, quantity) {
 	this.image = "original.jpg";
 }
 
+/* Select glazing for product
+ * Allows only one glazing to be selected at a time
+ * and updates the html file accordingly */
 function selectGlazing(product, glazing) {
 	var name = "#glazing-" + product.glazing;
 	$(name).css("background-color", "#BBBBBB");
@@ -15,6 +26,9 @@ function selectGlazing(product, glazing) {
     $("#glazing-" + glazing).css("background-color", "#666666");
 }
 
+/* Select quantity for product
+ * Allows only one quantity to be selected at a time
+ * and updates the html file accordingly */
 function selectQuantity(product, quantity) {
 	var name = "#quantity-" + product.quantity;
 	$(name).css("background-color", "#BBBBBB");
@@ -22,6 +36,8 @@ function selectQuantity(product, quantity) {
 	$("#quantity-" + quantity).css("background-color", "#666666");
 }
 
+/* Add to cart
+ * Add product to the cart and combine duplicates of the same item */
 function addToCart(cart, product) {
 	for (i = 0; i < cart.length; i++) {
 		var item = cart[i];
@@ -33,6 +49,8 @@ function addToCart(cart, product) {
 	cart.push(product);
 }
 
+/* Update item count
+ * Updates the html page with most updated item count */
 function updateItemCount(cart) {
 	var count = 0;
 	for (i = 0; i < cart.length; i++) {
@@ -48,9 +66,11 @@ $(document).ready(function() {
 	if (cart === null) {
 		cart = [];
 	} else {
+		/* Updates item count on the page from default zero if there are items */
 		updateItemCount(cart);
 	}
 
+	/* Set product default to no glazing and quantity 1 */
 	var currProduct = new Product("none", 1);
 
 	/* Select a glazing */
@@ -83,8 +103,10 @@ $(document).ready(function() {
 
 	/* Add to cart */
 	$("#add-to-cart").click(function() {
+		/* Add product to cart and update item count on the page */
 		addToCart(cart, currProduct);
 		updateItemCount(cart);
+		/* Save updated cart to local storage */
 		localStorage.setItem("savedCart", JSON.stringify(cart));
 		currProduct = new Product(currProduct.glazing, currProduct.quantity);
 	});
