@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Judy Kong | Project Scene</title>
+    <!-- Encoding -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+
+<body id="project-page" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#project-page">PROJECT SCENE</a></li>
+                <li><a href="#overview">OVERVIEW</a></li>
+                <li><a href="#detail">DETAILS</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">THIS SITE<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="assets/images/scene-capture2.png" alt="Scene" width="1200" height="700">
+            <!-- Place Holder For Captions -->
+        </div>
+        <div class="item">
+            <img src="assets/images/scene-capture1.png" alt="Scene" width="1200" height="700">
+            <!-- Place Holder For Captions -->
+        </div>
+        <div class="item">
+            <img src="assets/images/scene-capture3.png" alt="Scene" width="1200" height="700">
+            <!-- Place Holder For Captions -->
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Project Overview -->
+<div id="overview" class="container text-center">
+    <h2>Project Scene</h2>
+    <p><em>Scene is a project that helps users understand art works with simple and straightforward augmented reality assistance. When you goes into a museum, it's always hard to understand the art works if you don't have much of an art background. Scene helps you understand art works by storing a big number of art work descriptions in the database.</p>
+    <p><em>Whenever you point your phone camera to an art work, it matches with the art works in our database, and displays the descriptions as text floating above the art work on your screen. In this way, you can have a full view of the art work without having to walk very close to look at the descriptions on the wall.</p>
+</div>
+
+<!-- Project Details -->
+<div id="detail" class="bg-1">
+    <div class="container">
+        <h3 class="text-center">How It Was Developed</h3>
+        <br>
+        <p><em>This project was developed using the Vuforia AR SDK. The on-screen interactions were created in Unity and C#. We used the Vuforia built-in image recognition feature to match with the pictures of art works we store in the database, and then display relevant text we grabbed from wikipedia to the users.</p>
+        <p><em>This mobile app was a project for <strong>Tartanhacks 2017</strong>. We were selected to give a demo on the closing ceremony and this project won the <strong>DuoLingo Best Educational App Award</strong>.</p>
+        <br>
+        <div class="img-center text-center"><img id="team-pic" src="assets/images/scene-team.jpg" alt="Scene" width="600" height="400"></div>
+        <br>
+    </div>
+</div>
+
+<!-- Team -->
+<div id="team" class="container">
+    <h3 class="text-center">The Team</h3>
+    <p class="text-center"><em>The awesome team that made this app real!</em></p>
+    <br>
+    <!-- Team Members -->
+    <div class="row">
+        <!-- Oshadha Gunasekara -->
+        <div class="col-sm-4">
+            <a href="#demo" data-toggle="collapse">
+                <img src="assets/images/oshadha.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse">
+                <p><strong>Oshadha Gunasekara</strong></p>
+                <p>CMU CIT 20', Electrical and Computer Engineering</p>
+                <p>Front-end and back-end dev</p>
+            </div>
+        </div>
+        <!-- Peter (Wenze) Shi -->
+        <div class="col-sm-4">
+            <a href="#demo2" data-toggle="collapse">
+                <img src="assets/images/peter.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo2" class="collapse">
+                <p><strong>Peter (Wenze) Shi</strong></p>
+                <p>CMU SCS 20', Computer Science</p>
+                <p>Front-end and back-end dev</p>
+            </div>
+        </div>
+        <!-- Ziyang Wang -->
+        <div class="col-sm-4">
+            <a href="#demo3" data-toggle="collapse">
+                <img src="assets/images/ziyang.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo3" class="collapse">
+                <p><strong>Ziyang Wang</strong></p>
+                <p>CMU SCS 19', Computer Science</p>
+                <p>Front-end and back-end dev</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#project-page" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br>
+        <p>By Judy Kong, Apr 2018</p> 
+    </footer>
+
+    <!-- Moved Javascript files to the end of body for speedup -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
