@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Judy Kong | Project Kara</title>
+    <!-- Encoding -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+
+<body id="project-page" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#project-page">PROJECT KARA</a></li>
+                <li><a href="#overview">OVERVIEW</a></li>
+                <li><a href="#ideation">IDEATION</a></li>
+                <li><a href="#storyboard">STORYBOARD</a></li>
+                <li><a href="#iteration">ITERATION</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">THIS SITE<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="assets/images/kara-main.png" alt="Kara" width="1200" height="700">
+            <!-- Place Holder For Captions -->
+        </div>
+        <div class="item">
+            <img src="assets/images/kara-work.jpg" alt="Kara" width="1200" height="700">
+            <!-- Place Holder For Captions -->
+        </div>
+        <div class="item">
+            <img src="assets/images/kara-demo.png" alt="Scene" width="1200" height="700">
+            <!-- Place Holder For Captions -->
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Project Overview -->
+<div id="overview" class="container text-center">
+    <h2>Project Kara</h2>
+    <p><em>Kara is a conversational user interfaces that helps improve efficiency of group ordering, for a variety of different scenarios including home parties, company meetings, field trips, etc. </p>
+    <p><em>Kara looks for nearby restaurants that take group orders and provides you with a list of places for you to choose from. It allows you to put in your own preferences and search in specific scenarios, while putting in your special instructions to be sent to the restaurants. It also allows pre-ordering, so that you can plan ahead.</p>
+</div>
+
+<!-- Ideation -->
+<div id="ideation" class="bg-1">
+    <div class="container">
+        <h3 class="text-center">Ideation</h3>
+        <br>
+        <p><em>After preliminary research, we decided to work on a CUI that takes group orders. We name our CUI Kara, since it sounds like a name of a friend and is very easy to pronounce. We then listed out some activities that we want Kara to support.</p>
+        <p><em>We also went through experience prototyping to  gure out more user needs that we didn’t discover in our design process. We asked a few other groups to act in our scenario and recorded what questions they asked and what confusion they had. During the experience prototypring, some people were confused about the food options - “Does it only have pizza ordering, or does it have something else?“; some people raised allergy problems and asked Kara to check for ingredients of food; some people asked for suggestions, like “How should I order?“ or more speci c concerns like “I think there are too many chickens in the group meal.“</p>
+        <br>
+    </div>
+</div>
+
+<!-- Ideation -->
+<div id="storyboard" class="bg-2">
+    <div class="container">
+        <h3 class="text-center">Storyboard</h3>
+        <br>
+        <div><img src="assets/images/kara-storyboard1.jpg" alt="Scene" width="100%"></div>
+        <div><img src="assets/images/kara-storyboard2.jpg" alt="Scene" width="100%"></div>
+        <br>
+    </div>
+</div>
+
+<!-- Iteration & Concept Video -->
+<div id="iteration" class="bg-1">
+    <div class="container">
+        <h3 class="text-center">Iteration</h3>
+        <br>
+        <p><em>To get prepared for the  owchart of our  nal design, we went through our re ned preattentives and attentives, and listed out the utterances and responses for each attentive using stickers. In the “order food“ attentive, we included multiple features of setting delivery time, recommending food types and restaurants, reminding of utensils, reminding of drinks, detecting change in location using GPS, etc. We also played around the CUI prototyping online tool API.AI (Diagflow) and built a simple version of Kara to test with.</p>
+        <p><em>After the two rounds of experience prototyping, critique, and refinements, we created the conversational flowchart of Kara, on both the general ordering procedure and the speci c user  ow in the party ordering scenario we worked on. The  ow charts consisted of preattentives and attentives, each has different utterances and responses, with a few error-catching features with response.</p>
+        <br>
+    </div>
+</div>
+
+<!-- Concept Video -->
+<div id="iteration" class="bg-2">
+    <div class="container">
+        <h3 class="text-center">Concept Video</h3>
+        <br>
+        <div><img src="assets/images/kara-video.png" alt="Scene" width="100%"></div>
+    </div>
+</div>
+
+
+<!-- Team -->
+<div id="team" class="container">
+    <h3 class="text-center">The Team</h3>
+    <p class="text-center"><em>My awesome peers that worked together to create this fun CUI!</em></p>
+    <br>
+    <!-- Team Members -->
+    <div class="row center">
+        <div class="col-sm-2"></div>
+        <!-- Bobbie Soques -->
+        <div class="col-sm-4">
+            <a href="#demo" data-toggle="collapse">
+                <img src="assets/images/bobbie.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse">
+                <p><strong>Bobbie Soques</strong></p>
+                <p>CMU DC 19'</p>
+                <p>Creative Writing and Human-Computer Interaction</p>
+            </div>
+        </div>
+        <!-- Qin Bian -->
+        <div class="col-sm-4">
+            <a href="#demo2" data-toggle="collapse">
+                <img src="assets/images/qin.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo2" class="collapse">
+                <p><strong>Qin Bian</strong></p>
+                <p>CMU MHCI 19'</p>
+                <p>Human-Computer Interaction</p>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#project-page" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br>
+        <p>By Judy Kong, Apr 2018</p> 
+    </footer>
+
+    <!-- Moved Javascript files to the end of body for speedup -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
